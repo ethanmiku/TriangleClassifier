@@ -114,8 +114,6 @@ If a customer enters side lengths that cannot form a valid triangle, the program
 3. Right Triangle Identification
 When a customer enters side lengths that form a right triangle, the program must include "Right" in the classification so the studio knows the piece needs reinforced corners. For example, entering (3, 4, 5) should return "Right Scalene". Triangles without a right angle must not receive the "Right" prefix.
 
-The acceptance test will be implemented in `test_acceptance.py` and will call `classify_triangle()` to verify the customer requirements end-to-end.
-
 ## AI-Use Disclosure
 
 **GitHub Copilot:** Used to generate suggestions for unit tests, including standard triangle classifications, invalid inputs, and floating-point edge cases. Suggestions were reviewed, verified, and corrected where necessary.
