@@ -48,7 +48,7 @@ The following equivalence classes and boundary conditions were identified and te
 |---|---|---|
 | Equilateral | (5, 5, 5) | Equilateral |
 | Isosceles | (5, 5, 8) | Isosceles |
-| Scalene | (4, 5, 7) | Scalene |
+| Scalene | (5, 6, 7) | Scalene |
 | Right Scalene | (3, 4, 5) | Right Scalene |
 | Right Isosceles | (5, 5, 5√2) | Right Isosceles |
 | Invalid (triangle inequality) | (1, 2, 3) | Invalid |
