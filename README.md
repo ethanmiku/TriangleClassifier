@@ -72,7 +72,7 @@ GitHub Copilot was used to suggest unit tests. Each suggestion was reviewed agai
 | `test_invalid_triangle` | Yes | Kept | Correctly rejected a degenerate triangle. |
 | `test_equilateral_triangle` | Yes | Kept | Correctly verified three equal sides. |
 | `test_isosceles_triangle` | Yes | Kept | Correctly verified exactly two equal sides. |
-| `test_scalene_triangle` | Yes | Kept | Correctly classified (4, 5, 7) as Scalene. |
+| `test_scalene_triangle` | Yes | Kept | Correctly classified (5, 6, 7) as Scalene. |
 | `test_right_isosceles_triangle` | Yes | Kept | Correctly checked a right-isosceles triangle using √2. |
 | `test_zero_length_side` | Yes | Kept | Correctly rejected a zero-length side. |
 | `test_negative_length_side` | Yes | Kept | Correctly rejected a negative side length. |
