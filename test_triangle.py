@@ -49,7 +49,6 @@ def test_almost_right_triangle():
     assert classify_triangle(3, 4, 5.0001) == "Scalene"
 
 
-
 # Generate tests for tricky triangle edge cases,
 # including floating-point precision and triangle inequality boundaries.
 # Verify that each test uses the correct expected result.
@@ -65,3 +64,11 @@ def test_triangle_inequality_boundary():
 # Test that a triangle with three very small equal positive sides is classified correctly
 def test_small_equilateral_triangle():
     assert classify_triangle(1e-10, 1e-10, 1e-10) == "Equilateral"
+
+# Generate additional tests for tricky triangle boundary conditions.
+# Include cases where sides are nearly degenerate or nearly right-angled.
+# Determine the expected classifications independently.
+def test_nearly_degenerate_triangle():
+    assert classify_triangle(1, 1, 1.9999999999) == "Isosceles"
+    assert classify_triangle(1, 1, 1.99999999999) == "Isosceles"
+    assert classify_triangle(1, 1, 1.999999999999) == "Isosceles"
