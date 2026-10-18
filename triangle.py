@@ -1,6 +1,6 @@
 import math
 
-def is_triangle_valid(a,b,c) -> bool:
+def is_valid_triangle(a,b,c) -> bool:
     # All sides must be greater than 0
     if a <= 0 or b <= 0 or c <= 0:
         return False
@@ -13,7 +13,7 @@ def is_triangle_valid(a,b,c) -> bool:
 
 def classify_triangle(a,b,c) -> str:
     #check if the triangle is valid first
-    if not is_triangle_valid(a,b,c):
+    if not is_valid_triangle(a,b,c):
         return "Invalid"
 
     #determine the triangle type
@@ -30,7 +30,7 @@ def classify_triangle(a,b,c) -> str:
 
     #check the pythagorean theorm using a tolerance
 
-    if math.isclose(x**2 + y**2, z**2, rel_tol = 1e-9, abs_tol = 1e-9):
+    if math.isclose((x / z)**2 + (y / z)**2, 1.0, rel_tol = 1e-9, abs_tol = 1e-9):
         return "Right " + triangle_type
 
     return triangle_type
